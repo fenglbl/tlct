@@ -1,0 +1,128 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+				{
+				    "path" : "pages/login/login",
+				    "style" : {
+							// "navigationBarBackgroundColor":"#FF7043",
+							// "navigationBarTitleText":""
+							"navigationStyle":"custom"
+						}
+				}
+				,
+				{
+					"path": "pages/index/index",
+					"style": {
+						// #ifdef H5
+						"navigationStyle":"custom",
+						// #endif
+						"enablePullDownRefresh":true
+					}
+				}
+				,
+				{
+							"path" : "pages/find/find",
+							"style" : {
+								// #ifdef H5
+								"navigationStyle":"custom"
+								// #endif
+							}
+				}
+				,
+				{
+							"path" : "pages/me/me",
+							"style" : {}
+				}
+				,
+				{
+							"path" : "pages/friend/friend",
+							"style" : {}
+				}
+        ,
+				{
+            "path" : "pages/reg/reg",
+            "style" : {
+							"navigationBarTitleText":"新用户注册"
+						}
+        }
+        ,{
+            "path" : "pages/forgetPwd/forgetPwd",
+            "style" : {
+							"navigationBarTitleText":"密码找回"
+						}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {
+							"navigationBarTitleText":"协议"
+						}
+        }
+        ,{
+            "path" : "pages/nearby/nearby",
+            "style" : {
+							"navigationBarTitleText":"附近的人"
+						}
+        }
+        ,{
+            "path" : "pages/chat/chat",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/searchUser/searchUser",
+            "style" : {
+							"navigationStyle":"custom"
+						}
+        }
+        ,{
+            "path" : "pages/userInfo/userInfo",
+            "style" : {
+							"navigationBarTitleText":""
+						}
+        }
+        ,{
+            "path" : "pages/addSend/addSend",
+            "style" : {
+							"navigationBarTitleText":""
+						}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "TLCT",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"borderStyle":"black",
+		"selectedColor":"#FF7043",
+		"color":"#333333",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"消息",
+				"iconPath":"static/msg.png",
+				"selectedIconPath":"static/msg-at.png"
+			},
+			{
+				"pagePath":"pages/friend/friend",
+				"text":"通讯录",
+				"iconPath":"static/friend.png",
+				"selectedIconPath":"static/friend-at.png"
+			},
+			{
+				"pagePath":"pages/find/find",
+				"text":"发现",
+				"iconPath":"static/find.png",
+				"selectedIconPath":"static/find-at.png"
+			},
+			{
+				"pagePath":"pages/me/me",
+				"text":"我",
+				"iconPath":"static/me.png",
+				"selectedIconPath":"static/me-at.png"
+			}
+		]
+	},
+	"easycom":{
+		"autoscan":true
+	}
+}
